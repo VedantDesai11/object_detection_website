@@ -4,3 +4,4 @@ torchvision==0.10.0+cpu
 Flask==2.0.1
 seaborn==0.11.1
 gunicorn==20.1.0
+requests==2.24.0
