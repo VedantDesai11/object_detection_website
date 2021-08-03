@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<HTML>
+    <HEAD>
+        <TITLE>Object Detection - Vedant Desai</TITLE>
+        <LINK rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </HEAD>
+
+    <BODY>
+        <H1 class='text-center mt-5'>Object Detector trained on MS-COCO Dataset</H1>
+        <FORM class='p-3 text-center' action='/', method='post' enctype='multipart/form-data'>
+            <input class='w-25 mx-auto text-center form-control' type='file' name='imagefile'>
+            <input class='btn btn-primary mt-3' type='submit' value='Predict Image'>
+        </FORM>
+
+        {% if prediction_path %}
+            <img src="{{ prediction_path }}" class="rounded w-50 mt-3 mx-auto d-block" alt="Prediction"/>
+        {% endif %}
+    </BODY>
+</HTML>
